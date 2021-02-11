@@ -56,20 +56,20 @@ export const Search = () => {
       <div class="imageContainer">
        {val.images && val.images.map(i =>  <img class="image" id={'image_' + val.id + '_' + (val.images.length - 1)} src={i.src} />) }
       </div>
-      {val.NumberEpisodes && <div class="NumberEpisodes" id={'NumberEpisodes_'+ val.id}> "Number of Episodes :" + {val.NumberEpisodes}</div>}
-      {val.generatedOn && <div class="generatedOn" id={'generatedOn' + val.id}> "Generated On: " + {val.generatedOn}</div>}
+      {val.NumberEpisodes && <div class="NumberEpisodes" id={'NumberEpisodes_'+ val.id}> Number of Episodes :{val.NumberEpisodes}</div>}
+      {val.generatedOn && <div class="generatedOn" id={'generatedOn' + val.id}> Generated On: {val.generatedOn}</div>}
       {val.vintage && <div class="vintage" id={'vintage_' + val.id}> "Vintage :" + {val.vintage}</div>}
       {val.premiereDate && <div class="premiereDate" id={'premiereDate_' + val.id}>  "Premiere Date" + {val.premiereDate}</div>}
       <span class="label">  INFO From&nbsp;</span>
-      {val.id && <a target="blank" class="animenewsnetwork" href={'https://www.animenewsnetwork.com/encyclopedia/anime.php?id=' + val.id} id={'link_' + val.id}>  "Anime News Network"</a>}
+      {val.id && <a target="blank" class="animenewsnetwork" href={'https://www.animenewsnetwork.com/encyclopedia/anime.php?id=' + val.id} id={'link_' + val.id}>Anime News Network</a>}
        {val.precision && <span class="label"> Official {val.precision} Website </span>}
       
         
        {val.officialWebsite.t && <a class="officialWebsite" target="blank" id={'officialWebsite_'+ val.id} href={val.officialWebsite.href}> {"" + val.officialWebsite.t}</a> }
        
       {val.officialWebsite.href &&  <a class="officialWebsite" target="blank" id={'officialWebsite_' + val.id} href={val.officialWebsite.href}> {"" + val.officialWebsite.href}</a>}
-     {val.precision &&  <div class="Precision" id={'precision_'+ val.id} > "Media Type: " + {val.precision}</div>}
-      {val.summary &&  <div class="Summary" id={'Summary_' + val.id}>  "Summary :" + {val.summary}</div>}
+     {val.precision &&  <div class="Precision" id={'precision_'+ val.id} > Media Type:  {val.precision}</div>}
+      {val.summary &&  <div class="Summary" id={'Summary_' + val.id}>  Summary : {val.summary}</div>}
       
       {val.nbVotes && <div class="ratings" id={'ratings_'+val.id}> Rating Num of votes {val.nbVotes} weighted Score {val.weightedScore} bayesian Score {val.bayesian_score}</div>}
       
