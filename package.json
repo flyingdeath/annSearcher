@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "node ./bin/www",
+    "dev": "npm install --only=dev && node ./bin/www",
     "client": "cd client && cd myapp && npm start",
     "start": "concurrently \"npm run dev\" \"npm run client\""
   },
