@@ -1,0 +1,109 @@
+
+<div class="nameContainer">
+<span class="infoContainer">
+<span class="NameTitle" id="name_{val.id}">  {val.name}</span>
+<div class="metadataContainer">
+ <div class="metaDataOne">
+ <div class="altNameContainer">
+   <div class="mainName" id="main_name_{val.id}" > {val.name}</div>
+      <div class="altTitles" id="alt_{val.id + altIndex}"  >{title}</div 
+        <div class="imageContainer">
+         <img class="image" id="image_{val.id + "_" + val.images.length - 1}" +  src="{i.src}" />
+
+        </div>
+        <div class="NumberEpisodes" id="NumberEpisodes_{val.id}"> "Number of Episodes :" + {val.NumberEpisodes}</div>
+        <div class="generatedOn" id="generatedOn{val.id}"> "Generated On: " + {val.generatedOn}</div>
+        <div class="vintage" id="vintage_{val.id}"> "Vintage :" + {val.vintage}</div>
+        <div class="premiereDate" id="premiereDate_{val.id}">  "Premiere Date" + {val.premiereDate}</div>
+        <span class="label">  INFO From&nbsp;</span>
+        <a target="blank" class="animenewsnetwork" href="https://www.animenewsnetwork.com/encyclopedia/anime.php?id={val.id}" id="link_{val.id}">  "Anime News Network"</a>
+        <span class="label"> Official {val.precision} Website (</span>
+         <a class="officialWebsite" target="blank" id="officialWebsite_{val.id}" href="{val.officialWebsite.href}"> {"" + val.officialWebsite.t}</a>
+         <a class="officialWebsite" target="blank" id="officialWebsite_{val.id}" href="{val.officialWebsite.href}"> {"" + val.officialWebsite.href}</a>
+        <div class="Precision" id="precision{val.id}" > "Media Type: " + {val.precision}</div>
+        <div class="Summary" id="Summary_{val.id}">  "Summary :" + {val.summary}</div>
+        <div class="ratings" id="ratings_{val.id}"> Rating Num of votes {val.nbVotes} weighted Score {val.weightedScore} bayesian Score {val.bayesian_score}</div>
+
+                    <div class="metadataTwoListsContianer">
+                    <div> Lists</div>
+                    <div class="metadataTwoLists">
+                      <div class="themeContainer">
+                      <div> Themes</div>
+                                <div class="themes">{theme}</div>
+                                
+                      </div>
+                      <div class="GenresContainer">
+                      <div> Genres</div>
+                                <div class="generes">{genere}</div>
+                                
+                      </div>
+                      <div class="openingThemeContainer">
+                      <div> Opening Themes</div>
+                                <div class="openingTheme">{openingt}</div>
+                                
+                      </div>
+                      <div class="endingThemeContainer">
+                      <div>  Ending Themes</div>
+                                <div class="endingTheme">{endingt}</div>
+                                
+                      </div>
+                      <div class="relatedContainer">
+                      <div> Related Previous</div>
+                                <div class="related-prev" id="related_{relatedPrevListVal.id}"> {relatedPrevListVal.rel}</div>
+                                
+                      </div>
+                      <div class="episodeContainer">
+                      <div> Episodes</div>
+                           <div class="episode" id="episode_{epsVal.gid} "> {epsVal.num + ", " + epsVal.title}</div>
+                                
+                      </div>
+                      <div class="castContainer">
+                      <div> Cast</div>
+                                 <div class="cast" id="cast_{epsVal.gid}")= {castVal.role + "is " + castVal.name}</div>
+                                
+                      </div>
+                      <div class="creditsContainer">
+                      <div> Credits</div>
+                                <div class="credits" id="credits_{creditsVal.gid}"> {creditsVal.task + " is " + creditsVal.name}</div>
+                                
+                      </div>
+                      <div class="staffContainer">
+                      <div> Staff</div>
+                                <div class="staff" id="credits_{staffVal.gid}"> {staffVal.task + ", " + staffVal.name}</div>
+                                
+                      </div>
+                      <div class="newsContainer">
+                      <div> News</div>
+                                    <a class="news" target="blank" id="news_{newsVal.gid}" href="{newsVal.href}"> {newsVal.datetime + ", " + newsVal.text}</a>
+                                
+                      </div>
+                      <div class="reviewContainer">
+                      <div> Reviews</div>
+                                <div class="generes">
+                                  <a class="review" target="blank" id="news_{reviewVal.gid}"  href="{reviewVal.href}"> {reviewVal.title}</a>
+
+                                </div>
+                                
+                      </div>
+                                
+                      </div>
+                    </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+ </div>
+ </div>
+
+</div>
+</div>
+
+</span>
+
+</div>

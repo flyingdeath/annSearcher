@@ -1,0 +1,222 @@
+.App {
+/*  text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#container{
+  background-repeat: repeat;
+
+}
+body{
+
+  color:#FFF;
+  background-color: #000;
+}
+a.review:visited,
+a.review:active,
+a.review:link,
+a.review:hover,
+a.news:visited,
+a.news:active,
+a.news:link,
+a.news:hover,
+a.officialWebsite:visited,
+a.officialWebsite:active,
+a.officialWebsite:link,
+a.officialWebsite:hover,
+a.animenewsnetwork:visited,
+a.animenewsnetwork:active,
+a.animenewsnetwork:link,
+a.animenewsnetwork:hover{
+
+  color:#FFF;
+}
+
+#searchcontrols{
+  width:400px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+#searchInnerContainer{
+width:400px;
+margin-right:auto;
+margin-left:auto;
+}
+
+.Header{
+text-align:center
+  
+}
+
+.resultContainer{
+  background-size: 100%;
+  left:71%;
+  position: relative;
+ /*
+  background-color:#AAAAAA;
+  padding-left:270px;
+  position: absolute;
+  top:97px;
+  left:-200px;
+  background-repeat: repeat;
+  background-repeat: no-repeat;*/
+}
+.image{
+  height: 128px;
+  display: inline-block;
+}
+.imageContainer{
+
+  position: relative;
+
+}
+.Summary{
+  display: inline-block;
+  width:800px
+ }
+.NameTitle{
+  width:400px;
+  display: inline-block;
+  cursor:grab;
+
+
+}
+/*
+div.nameContainer:hover .altNameContainer{
+display:inline-block;
+}
+.altNameContainer{
+  display:none;
+}
+span.infoContainer:hover .metaDataOne{
+  display:inline-block;
+}
+*/
+
+div#metadataExtrenalContainer .metaDataOne{
+  display:inline-block;
+  position:fixed;
+  top:100px;
+  left:10px;
+  height: 800px;
+  width:70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.metaDataOne{
+  display:none;
+}
+.infoIcon{
+  display:inline-block;
+  width:24px;
+  height: 24px;
+}
+.metadataContainer{
+/*
+  position:fixed;
+  top:100px;
+  left:10px;
+  height: 800px;
+  width:70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  */
+}
+
+
+.altTitles,
+.NumberEpisodes,
+.generatedOn,
+.vintage,
+.premiereDate,
+.animenewsnetwork,
+.officialWebsite,
+.Precision,
+.Summary,
+.ratings,
+.label,
+.mainName,
+.image
+{
+
+  background-color:rgba(10,218,255, 0.4);
+  border: dimgrey dotted 2px;
+  border-radius: 2px;
+  padding:3px;
+
+  margin: 7px;
+
+}
+/*
+div.metadataTwoListsContianer:hover .metadataTwoLists{
+  display:inline-block;
+}
+.metadataTwoLists{
+  display:none;
+}
+  overflow: auto;
+  height:200px;
+*/
+.metadataTwoLists{
+  width:800px;
+}
+
+.NameTitleMetaData,
+.themeContainer,
+.GenresContainer,
+.openingThemeContainer,
+.endingThemeContainer,
+.relatedContainer,
+.episodeContainer,
+.castContainer,
+.creditsContainer,
+.staffContainer,
+.newsContainer,
+.reviewContainer{
+  display: inline-block;
+  width:180px;
+  background-color:rgba(10,218,255, 0.3);
+  border: dimgrey dotted 2px;
+  border-radius: 2px;
+  padding:2px;
+  margin: 4px;
+  vertical-align: text-top;
+}
