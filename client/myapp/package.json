@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:3080",
+  "proxy":"http://evening-castle-19119.herokuapp.com:3080",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
