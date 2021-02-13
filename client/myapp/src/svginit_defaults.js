@@ -1,15 +1,20 @@
 function svg() {
+    /*
     var radius = 100;
+    
     var thickness = 2;
     var spacing = 125;
     var sizing = 200;
     var circColor = '#ffffff';
-    var hue = "255"
-    var current_space = 345;
-    var rot_x = 0;
+    */
+   /*
+   var current_space = 345;
+   
+   var rot_x = 0;
     var rot_y = 0;
+*/
+    var hue = "255";
     var scale = 1;
-
     var current_color = 'hsl(' + hue + ',100%, 50%)';
     var icons = {
         eye001:
@@ -109,7 +114,7 @@ function svg() {
    
 var svgString = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"'+
 ' width="'+totalArea[0]+'px" height="'+totalArea[1]+'px" id="linkedcircles">';
-      var hue  = 1.0;
+       hue  = 1.0;
     //  var list = document.getElementsByClassName("resultContainer");
       var i = 0;
       for(var y =0;y<totalArea[1];y+=200){ 

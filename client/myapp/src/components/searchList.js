@@ -1,5 +1,5 @@
 import React from 'react'
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 
 export const Search = () => {
   const [initialState, setIntialState] = useState([]);
@@ -54,7 +54,7 @@ export const Search = () => {
     { val.alternativeTitles && val.alternativeTitles.map(title =>  <div class="altTitles" id={'alt_' + val.id + title}>{title}</div>) }
       </div>
       <div class="imageContainer">
-       {val.images && val.images.map(i =>  <img class="image" id={'image_' + val.id + '_' + (val.images.length - 1)} src={i.src} />) }
+       {val.images && val.images.map(i =>  <img class="image" id={'image_' + val.id + '_' + i.width} alt={i.src} src={i.src} />) }
       </div>
       {val.NumberEpisodes && <div class="NumberEpisodes" id={'NumberEpisodes_'+ val.id}> Number of Episodes :{val.NumberEpisodes}</div>}
       {val.generatedOn && <div class="generatedOn" id={'generatedOn' + val.id}> Generated On: {val.generatedOn}</div>}
